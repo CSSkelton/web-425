@@ -1,2 +1,6 @@
-# web-425
-Bellevue Web Development Program - WEB 425
+# WEB 425 Angular with TypeScript
+
+## Contributors
+
+* Professor Krasso
+* Cody Skelton
