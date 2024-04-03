@@ -26,32 +26,32 @@
 
 </nav>
 
-<div class="main container">
+<div role="main" class="container">
 
   <br><br>
   <h2>{{assignment}}</h2>
-  <div class="row">
+  <div class="row" *ngIf="isLoggedIn; else showError">
 
-    <div class="col-sm-auto">
+    <div class="col">
       <!-- This should have been in my-image component HTML -->
-      <img src="../assets/profile_picture.jpg" alt="cody skelton profile picture">
+      <app-my-image></app-my-image>
     </div>
 
     <div class="col">
       <!-- This should have been in my-details component HTML -->
-      <ul>
-        <li>
-          Name: Cody Skelton
-        </li>
-        <li>
-          Favorite Food: Chicken Adobo
-        </li>
-        <li>
-          Favorite Color: Silver
-        </li>
-      </ul>
+      <app-my-details></app-my-details>
     </div>
 
   </div>
+
+  <ng-template #showError>
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="alert alert-danger">
+          You are not authorized to view this content.
+        </h4>
+      </div>
+    </div>
+  </ng-template>
 
 </div>
