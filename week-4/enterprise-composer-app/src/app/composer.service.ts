@@ -1,3 +1,11 @@
+/**
+ * title: composer.service.ts
+ * purpose: creates Composer array and provides accessor methods
+ * author: Cody Skelton
+ * date modified: 04.16.2024
+ * code requirements derived from WEB 425 program requirements
+ */
+
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
 import { Observable, of } from 'rxjs';
@@ -7,7 +15,6 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-
 export class ComposerService {
 
   composers: Array<IComposer>;
@@ -44,8 +51,11 @@ export class ComposerService {
     }
   }
 
-  // Running tests, search will fail if capital letters input. Why?? Shouldn't toLowerCase() allow this?
-  filterComposers(name: string): Observable<IComposer[]> {
+  // pipe allows us to chain functions together
+  // map used to return new array of objects
+  // filter narrows down data
+  // after testing, doesn't recognize capital letters. shouldn't toLowerCase() allow this?
+  filterComposers(name: string): Observable<IComposer[]>{
     return of(this.composers).pipe(map(composers => composers.filter(composer => composer.fullName.toLowerCase().indexOf(name) > -1)));
   }
 }

@@ -1,3 +1,11 @@
+/**
+ * title: composer-details.component.ts
+ * purpose: functional code for composer-details component
+ * author: Cody Skelton
+ * date modified: 04.16.2024
+ * code requirements derived from WEB 425 program requirements
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { IComposer } from '../composer.interface';
 import { ComposerService } from '../composer.service';

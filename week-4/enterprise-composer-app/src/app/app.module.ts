@@ -1,3 +1,11 @@
+/**
+ * title: app.module.ts
+ * purpose: declaration statements for app as a whole
+ * author: Cody Skelton
+ * date modified: 04.16.2024
+ * code requirements derived from WEB 425 program requirements
+ */
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

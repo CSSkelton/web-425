@@ -2,8 +2,8 @@
  * title: composer-list.component.ts
  * purpose: typescript file for composer-list component
  * author: Cody Skelton
- * date: 04.03.2024
- * code derived from WEB 425 week 2 assignment 4 requirements
+ * date modified: 04.16.2024
+ * code derived from WEB 425 program requirements
  */
 
 import { Component, OnInit } from '@angular/core';
