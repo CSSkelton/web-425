@@ -1,0 +1,16 @@
+/**
+  title: book-list.component.scss
+  purpose: styling for book-list component
+  author: Cody Skelton
+  date: 04.21.2024
+  Code sourced from WEB 425 exercise requirements
+*/
+
+.a-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-link:hover {
+  text-decoration: underline;
+}

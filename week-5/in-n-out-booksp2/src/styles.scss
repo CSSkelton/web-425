@@ -1,0 +1,45 @@
+/**
+  title: styles.scss
+  purpose: styling for the application as a whole
+  author: Cody Skelton
+  date: 04.21.2024
+  Code sourced from WEB 425 exercise requirements
+*/
+@import './theme';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.blue {
+  color: #2196f3;
+}
+
+.green {
+  color: #66bb6a;
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: white;
+}
+
+.attribution-link:hover {
+  text-decoration: underline;
+}
+
+.card-title-icon {
+  text-align: center;
+}
+
+.card-title-icon, .mat-icon {
+  font-size: 72px;
+}
+
+.align-center {
+  text-align: center;
+}
