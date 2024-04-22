@@ -1,0 +1,24 @@
+<!--
+  title: book-details-dialog.component.html
+  purpose: structural code for Book details dialog box
+  author: Cody Skelton
+  date: 04.21.2024
+  Code sourced from WEB 425 assignment requirements and course repository
+-->
+
+<mat-card>
+  <mat-card-title class="blue">
+    {{ book.title }}
+  </mat-card-title>
+  <mat-card-content>
+    <div fxLayout="column">
+      <p>ISBN: {{ book.isbn }}</p>
+      <p>Description: {{ book.description }}</p>
+      <p>Number of pages: {{ book.numOfPages }}</p>
+      <p>Authors: {{ book.authors.join(', ')}}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+  </mat-card-actions>
+</mat-card>

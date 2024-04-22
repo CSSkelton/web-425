@@ -2,5 +2,6 @@
     "cSpell.words": [
         "devkit",
         "jasminewd"
-    ]
+    ],
+    "angular.enable-strict-mode-prompt": false
 }
